@@ -6,5 +6,43 @@
     <script type="module" src="src/js/main.js"></script>
     <title>Добавление пользователя</title>
   </head>
-  <body></body>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <div class="container">
+        <div class="col-4 logoInfo">
+          <a href="#">
+            <img
+              src="/assets/logo/logo.svg"
+              width="28"
+              height="28"
+              alt="komita logo icon"
+            />
+          </a>
+          <div>
+            <span>Кабинет</span>
+            <span>Администратора</span>
+          </div>
+        </div>
+        <div class="col-8 dropdown dDownCustom">
+          <button
+            class="btn dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <div class="dDownInfo">
+              <span>Раскольников Д.С.</span>
+              <span>Менеджер организации</span>
+            </div>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Пункт 1</a></li>
+            <li><a class="dropdown-item" href="#">Пункт 2</a></li>
+            <li><a class="dropdown-item" href="#">Пункт 3</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+  </body>
 </html>
