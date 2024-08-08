@@ -1,0 +1,18 @@
+@import 'bootstrap/scss/bootstrap';
+@import 'variables.scss';
+
+@font-face {
+  font-family: 'Segoe UI';
+  src: local('Segoe UI'), url('/resources/fonts/Segoe_UI.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+:root {
+  font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+a {
+  font-weight: 500;
+  text-decoration: none;
+}
