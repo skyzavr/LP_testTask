@@ -1,11 +1,15 @@
 @import 'bootstrap/scss/bootstrap';
-@import 'variables.scss';
+@import 'variables.scss', 'header.scss', 'footer.scss', 'companyCard.scss',
+  'mainContent.scss', 'sideMenu.scss', 'formSection.scss';
 
 @font-face {
   font-family: 'Segoe UI';
   src: local('Segoe UI'), url('/resources/fonts/Segoe_UI.ttf') format('ttf');
   font-weight: normal;
   font-style: normal;
+}
+* {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 :root {
   font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
