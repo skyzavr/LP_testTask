@@ -7,7 +7,7 @@ export const listArea = ({ element }: { element: HTMLElement }) => {
   let dataInWork = JSON.parse(JSON.stringify(data));
 
   const getNewData = (query: string) =>
-    data.filter((el) => el.id.includes(query));
+    data.filter((el) => el.id.includes(query.trim()));
 
   const printElements = (data: dataTs[]) => {
     let value = '';
