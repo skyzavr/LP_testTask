@@ -3,8 +3,9 @@ type props = {
   type: string;
   element: HTMLElement;
 };
+type icons = { [key: string]: string };
 export const Toast = ({ message, type, element }: props) => {
-  const icons = {
+  const icons: icons = {
     error: '<i class="bi bi-exclamation"></i>',
     success: '<i class="bi bi-check-lg"></i>',
   };
