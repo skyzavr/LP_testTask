@@ -1,0 +1,14 @@
+@import 'bootstrap/scss/bootstrap';
+// general styles
+@import 'generalStyles/variables.scss', 'generalStyles/scroll.scss';
+// section styles
+@import 'sectionStyles/header.scss', 'sectionStyles/footer.scss',
+  'sectionStyles/companyCard.scss', 'sectionStyles/sideMenu.scss';
+@import 'mainContent.scss';
+// form styles
+@import 'formSection.scss', 'form/cardList.scss', 'form/tabs.scss',
+  'form/personData.scss';
+//components
+@import 'componentsStyles/button.scss', 'componentsStyles/checkBox.scss',
+  'componentsStyles/switch.scss', 'componentsStyles/toast.scss',
+  'componentsStyles/textInput.scss';
