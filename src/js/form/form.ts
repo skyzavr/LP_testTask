@@ -2,6 +2,14 @@ import { Toast } from '@components/toast';
 import { formInitialize } from './formInitialization';
 
 type handleResultProps = { isError: boolean; data: string };
+interface list extends HTMLFormControlsCollection {
+  email: { value: string };
+  jobTitle: { value: string };
+  secondName: { value: string };
+  middleName: { value: string };
+  firstName: { value: string };
+  groupAccess: { checked: boolean };
+}
 const form = document.getElementById('addNewUser') as HTMLFormElement;
 //1. first we initialize the form with all fields and areas
 formInitialize(form);
@@ -15,15 +23,16 @@ const getPickedTab = () => {
 };
 const collectData = () => {
   //ideally, all data's stored in a global store
-  const formList = form.elements;
+  const formList = form.elements as list;
   const tab = getPickedTab();
+
   return {
-    email: formList['email'].value,
-    jobTitle: formList['jobTitle'].value,
-    secondName: formList['secondName'].value,
-    middleName: formList['middleName'].value,
-    firstName: formList['firstName'].value,
-    groupAccess: formList['groupAccess'].checked,
+    email: formList.email.value,
+    jobTitle: formList.jobTitle.value,
+    secondName: formList.secondName.value,
+    middleName: formList.middleName.value,
+    firstName: formList.firstName.value,
+    groupAccess: formList.groupAccess.checked,
     tab,
   };
 };
@@ -53,7 +62,7 @@ const handleResult = (result: handleResultProps) => {
 
 const onSubmit = (e: SubmitEvent) => {
   e.preventDefault();
-  const email = form.elements.email.value;
+  const email = (form.elements as list).email.value;
   // here we check the data only for email, because the name (first and second), as well as the position are taken from some data and stay unchanged. Middle name is not required.
   const checkResult = checkEmailAddress(email);
   handleResult(checkResult);
