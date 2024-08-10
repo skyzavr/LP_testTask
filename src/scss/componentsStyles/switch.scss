@@ -17,6 +17,13 @@
         margin-left: 5px;
       }
     }
+    & input {
+      transition: 0.2s all ease-in;
+    }
+    & input:hover {
+      cursor: pointer;
+      border-color: $lavender800;
+    }
     .form-check-input:checked {
       background-color: $lavender700;
       border-color: $lavender700;
