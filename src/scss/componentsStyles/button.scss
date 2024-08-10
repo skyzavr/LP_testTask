@@ -1,0 +1,28 @@
+.customBtn {
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: 0.3s all ease-in;
+}
+.outline {
+  color: $lavender600;
+  border: 2px solid $lavender700;
+  background-color: transparent;
+  &:hover {
+    background-color: $lavender300;
+  }
+}
+.filled {
+  color: $white100;
+  border: 1px solid $lavender700;
+  background-color: $lavender700;
+  &:hover {
+    background-color: $lavender800;
+  }
+}
+.none {
+  background-color: transparent;
+  border: 0;
+  &:hover {
+    color: $lavender800;
+  }
+}
