@@ -1,0 +1,29 @@
+.form {
+  & .switchCustom {
+    color: $gray800;
+    & div {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      & label span {
+        color: $red40;
+      }
+      & .hint {
+        width: 16px;
+        height: 16px;
+        background-color: $lavender500;
+        border-radius: 50%;
+        color: $white100;
+        margin-left: 5px;
+      }
+    }
+    .form-check-input:checked {
+      background-color: $lavender700;
+      border-color: $lavender700;
+    }
+    .form-check-input {
+      background-color: $white100;
+      border-color: $lavender600;
+    }
+  }
+}
