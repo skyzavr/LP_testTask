@@ -102,7 +102,22 @@
         </aside>
       </section>
       <!-- form section-->
-      <section class="col-9 formSection"></section>
+      <section class="col-9 formSection">
+        <!-- btn handle -->
+        <div class="handling">
+          <button class="btn"><i class="bi bi-chevron-left"></i></button>
+          <h1>Добавление пользователя</h1>
+        </div>
+        <!-- form itself -->
+        <div class="form">
+          <form method="POST" id="addNewUser">
+            <div class="formHeaderSection">
+              <h3>Данные</h3>
+              <div id="messageArea"></div>
+            </div>
+          </form>
+        </div>
+      </section>
     </main>
 
     <!-- footer -->
@@ -110,4 +125,5 @@
       <div class="container">&copy; 2024 - КОМИТА ОТЧЁТ Онлайн</div>
     </footer>
   </body>
+  <script src="src/js/form/form.ts" type="module"></script>
 </html>
