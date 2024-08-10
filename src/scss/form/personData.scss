@@ -1,0 +1,10 @@
+.form {
+  & .nameGroup {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    & div:nth-child(2n) {
+      padding: 0 10px;
+    }
+  }
+}
